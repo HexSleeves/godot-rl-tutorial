@@ -5,4 +5,3 @@
 # Ignore exported games and Vim swap files
 bin/
 *.swp
-``
