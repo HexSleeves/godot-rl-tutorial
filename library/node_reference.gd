@@ -1,16 +1,5 @@
 class_name NodeReference
 
-# Define the signal connections for the nodes.
-# {
-#     source_node_name_1: {
-#         signal_name_1: [
-#             target_node_name_1, ...
-#         ],
-#         ...,
-#     },
-#     ...,
-# }
-
 
 const SPRITE_ROOT: String = "SpriteRoot"
 const PC_ACTION: String = "PcAction"
@@ -23,6 +12,7 @@ const SPRITE_STATE: String = "/root/SpriteState"
 
 const SIGNAL_SPRITE_CREATED: String = "sprite_created"
 const SIGNAL_SPRITE_REMOVED: String = "sprite_removed"
+
 const SIGNAL_ACTION_PRESSED: String = "action_pressed"
 
 
@@ -42,6 +32,7 @@ const SIGNAL_CONNECTIONS: Dictionary = {
         ],
     },
 }
+
 
 # {source_node: [target_node_1, ...], ...}
 const NODE_CONNECTIONS: Dictionary = {

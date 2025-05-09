@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://beww1t6fwrq3k"]
+[gd_scene load_steps=8 format=3 uid="uid://beww1t6fwrq3k"]
 
 [ext_resource type="Script" uid="uid://cfkmck408kwg4" path="res://scene/main_scene.gd" id="1_wgwml"]
 [ext_resource type="Script" uid="uid://b6s055bupawaf" path="res://scene/sprite_root.gd" id="2_4wnd8"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://b2n0a2gxr3jhg" path="res://scene/pc_action.gd" id="4_jsie2"]
 [ext_resource type="Script" uid="uid://uwe4itlu00nw" path="res://scene/init_world.gd" id="5_x5n27"]
 [ext_resource type="Script" uid="uid://iy6w65p7klcg" path="res://scene/sprite_coord.gd" id="6_jsie2"]
+[ext_resource type="Script" uid="uid://n10q6t54x0vs" path="res://scene/sprite_tag.gd" id="7_qvu5t"]
 
 [node name="MainScreen" type="Node2D"]
 script = ExtResource("1_wgwml")
@@ -26,3 +27,4 @@ script = ExtResource("5_x5n27")
 script = ExtResource("6_jsie2")
 
 [node name="SpriteTag" type="Node2D" parent="."]
+script = ExtResource("7_qvu5t")
