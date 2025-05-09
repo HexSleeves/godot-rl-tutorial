@@ -18,6 +18,7 @@ script = ExtResource("2_4wnd8")
 script = ExtResource("3_x5n27")
 
 [node name="PcAction" type="Node2D" parent="."]
+position = Vector2(1, -1)
 script = ExtResource("4_jsie2")
 
 [node name="InitWorld" type="Node2D" parent="."]
