@@ -9,8 +9,8 @@ const QUIT: StringName = &"quit"
 const AIM: StringName = &"aim"
 
 const MOVE_ACTIONS: Array[StringName] = [
-    MOVE_LEFT,
-    MOVE_RIGHT,
-    MOVE_UP,
-    MOVE_DOWN,
+  MOVE_LEFT,
+  MOVE_RIGHT,
+  MOVE_UP,
+  MOVE_DOWN,
 ]

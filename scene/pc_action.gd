@@ -38,6 +38,8 @@ func _on_PlayerInput_action_pressed(input_tag: StringName) -> void:
 						coord = Vector2i.UP
 				InputTag.MOVE_DOWN:
 						coord = Vector2i.DOWN
+				InputTag.QUIT:
+						get_tree().quit()
 				_:
 						return
 
@@ -51,6 +53,9 @@ func _on_PlayerInput_action_pressed(input_tag: StringName) -> void:
 						if not DungeonSize.is_in_dungeon(coord):
 								return
 						elif SpriteState.has_building_at_coord(coord):
+								return
+						elif SpriteState.has_actor_at_coord(coord):
+								_kick_back(_pc, coord)
 								return
 						elif SpriteState.has_trap_at_coord(coord):
 								_ammo = _pick_ammo(_pc, coord, _ammo)
@@ -110,3 +115,6 @@ func _is_impassable(coord: Vector2i) -> bool:
 func _block_shoot_ray(_source_coord: Vector2i, target_coord: Vector2i,
 				_args: Array) -> bool:
 		return _is_impassable(target_coord)
+
+func _kick_back(pc: Sprite2D, coord: Vector2i) -> void:
+	SpriteState.move_sprite(pc, coord)
